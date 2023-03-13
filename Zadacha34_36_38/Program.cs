@@ -74,7 +74,7 @@ Console.WriteLine(String.Join(" ", sumodd));*/
 //38. Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
 // вариант 1
-
+/*
 int Prompt()
 {
 Console.WriteLine("Введите количество элементов массива");
@@ -132,10 +132,10 @@ Console.WriteLine();
 double difference = Math.Round((maxim - minim), 3);
 
 Console.WriteLine("Разница между максимальным и минимальным числами массива равна " +  difference);
-Console.WriteLine();
+Console.WriteLine();*/
 
 // !!!!!!!!!! 2 вариант..... работает не правильно !!!!! не пойму почему
-/*
+
 int Prompt(string message)
 {
 Console.WriteLine(message);
@@ -161,18 +161,18 @@ for (int i = 0; i < length; i++)
 return array;
 }
 
-double [] newarray = GeneratArray(length, min, max);
-Console.WriteLine(String.Join(" ", GeneratArray(length, min, max)));
+double [] newwarray = GeneratArray(length, min, max);
+Console.WriteLine(String.Join(" ", newwarray));
 
 Console.WriteLine();
 
 double MaxI()
 {
-double max = newarray[0];
-for (int i = 0; i < newarray.Length; i++)
+double max = newwarray[0];
+for (int i = 0; i < newwarray.Length; i++)
 {
-    if (newarray[i] > max)
-    max = newarray[i];
+    if (newwarray[i] > max)
+    max = newwarray[i];
 }
 return max;
 }
@@ -182,11 +182,11 @@ Console.WriteLine(String.Join("", maxim));
 
 double MinI()
 {
-double min = newarray[0];
+double min = newwarray[0];
 for (int i = 0; i < length; i++)
 {
-    if (newarray[i] < min)
-    min = newarray[i];
+    if (newwarray[i] < min)
+    min = newwarray[i];
 }
 return min;
 }
@@ -198,4 +198,3 @@ double difference = Math.Round((maxim - minim), 3);
 
 Console.WriteLine("Разница между максимальным и минимальным числами массива равна " +  difference);
 Console.WriteLine();
-*/
