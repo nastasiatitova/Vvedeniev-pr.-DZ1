@@ -2,10 +2,10 @@
 
 Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
-int count = 1;
+int count = 2;
 Console.WriteLine("Вывод чисел");
 while (count <= number)
 {
     Console.Write(count + " ");
-count = count + 1;
+count = count + 2;
 }
